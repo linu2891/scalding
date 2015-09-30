@@ -1,0 +1,8 @@
+jog	p1b	summer
+jog	p2a	summer
+primaryType_p1	type_p2	subType_p3
+run	p2a	fast
+run	p2a	tennis
+run	p2b	tennis
+walk	p2b	stroll
+walk	p2c	saunter

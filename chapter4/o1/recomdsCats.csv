@@ -1,0 +1,5 @@
+primaryType_p1_reco	type_p2_reco	subType_p3_reco	RecommendedProductIds
+jog	p1b	summer	p2,p6
+jog	p2a	summer	p2,p6
+run	p2a	fast	p1,p7
+run	p2a	badminton	p7,p8,p3,p1

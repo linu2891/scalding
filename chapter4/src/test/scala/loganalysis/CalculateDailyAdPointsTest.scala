@@ -1,0 +1,7 @@
+package loganalysis
+
+/**
+ */
+class CalculateDailyAdPointsTest {
+
+}

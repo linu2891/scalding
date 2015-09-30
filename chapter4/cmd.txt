@@ -1,0 +1,14 @@
+t@ubuntu:~/da/1/books/ProgMapRedcSldingB/chapter4$ java -cp target/chapter4-0-jar-with-dependencies.jar -Xmx1G adtargeting.Runner --input log_file.tsv --local
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+java home :/usr/lib/jvm/java-7-openjdk-amd64
+2015-09-29 15:51:08,690 INFO  [main] adtargeting.Runner$ (Runner.scala:apply(16)) - Executing [CalculateDailyAdPoints] Job
+2015-09-29 15:51:09,387 INFO  [main] property.AppProps (AppProps.java:getAppID(162)) - using app.id: 5908847C1E5D42EFB76E88D11632CAA2
+2015-09-29 15:51:09,392 INFO  [main] management.CascadingServices (CascadingServices.java:loadProperties(165)) - loading properties: cascading/management/service.properties, from jar: file:/home/t/da/1/books/ProgMapRedcSldingB/chapter4/target/chapter4-0-jar-with-dependencies.jar
+2015-09-29 15:51:09,433 INFO  [main] provider.ServiceLoader (ProviderLoader.java:getClassLoader(100)) - loading services from library: file:/home/t/da/1/books/ProgMapRedcSldingB/chapter4/target/chapter4-0-jar-with-dependencies.jar
+2015-09-29 15:51:09,823 INFO  [main] rest.BulkUploadClient (BulkUploadClient.java:<init>(77)) - api key not supplied
+2015-09-29 15:51:09,862 INFO  [main] rest.DrivenDocumentService (DrivenDocumentService.java:doStartService(143)) - starting service. sending telemetry to https://driven.cascading.io from plugin file:/home/t/da/1/books/ProgMapRedcSldingB/chapter4/target/chapter4-0-jar-with-dependencies.jar
+2015-09-29 15:51:09,862 INFO  [main] rest.BufferedWriter (BufferedWriter.java:createRecorder(58)) - archive recording is not enabled
+2015-09-29 15:51:11,911 WARN  [main] rest.BulkUploadClient (BulkUploadClient.java:testConnectivity(214)) - host https://driven.cascading.io not available: Unrecognized field "pluginVersion" (class driven.management.rest.HandshakeData), not marked as ignorable (3 known properties: "messageBody", "messagePriority", "messagingVersion"])
+ at [Source: java.io.StringReader@3c854594; line: 7, column: 26] (through reference chain: driven.management.rest.HandshakeData["pluginVersion"])
+
+(Truncated)

@@ -1,0 +1,41 @@
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+java home :/usr/lib/jvm/java-7-openjdk-amd64
+2015-09-29 15:48:39,583 INFO  [main] adtargeting.Runner$ (Runner.scala:apply(16)) - Executing [CalculateDailyAdPoints] Job
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.twitter.scalding.Job$.apply(Job.scala:49)
+	at com.twitter.scalding.Tool.getJob(Tool.scala:51)
+	at com.twitter.scalding.Tool.run(Tool.scala:71)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at adtargeting.Runner$delayedInit$body.apply(Runner.scala:17)
+	at scala.Function0$class.apply$mcV$sp(Function0.scala:34)
+	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)
+	at scala.App$$anonfun$main$1.apply(App.scala:76)
+	at scala.App$$anonfun$main$1.apply(App.scala:76)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.generic.TraversableForwarder$class.foreach(TraversableForwarder.scala:35)
+	at scala.App$class.main(App.scala:76)
+	at adtargeting.Runner$.main(Runner.scala:9)
+	at adtargeting.Runner.main(Runner.scala)
+Caused by: java.lang.NoSuchMethodError: scala.collection.immutable.ListSet$.empty()Lscala/collection/immutable/ListSet;
+	at com.twitter.chill.ScalaCollectionsRegistrar.apply(ScalaKryoInstantiator.scala:127)
+	at com.twitter.chill.AllScalaRegistrar.apply(ScalaKryoInstantiator.scala:166)
+	at com.twitter.chill.ScalaKryoInstantiator.newKryo(ScalaKryoInstantiator.scala:87)
+	at com.twitter.chill.ScalaKryoInstantiator.newKryo(ScalaKryoInstantiator.scala:83)
+	at com.twitter.chill.KryoPool$2.newInstance(KryoPool.java:59)
+	at com.twitter.chill.KryoPool$2.newInstance(KryoPool.java:57)
+	at com.twitter.chill.ResourcePool.borrow(ResourcePool.java:37)
+	at com.twitter.chill.KryoPool.toBytesWithClass(KryoPool.java:114)
+	at com.twitter.chill.MeatLocker.<init>(MeatLocker.scala:31)
+	at com.twitter.chill.MeatLocker$.apply(MeatLocker.scala:21)
+	at com.twitter.scalding.BufferOp.<init>(Operations.scala:417)
+	at com.twitter.scalding.GroupBuilder.scanLeft(GroupBuilder.scala:261)
+	at adtargeting.CalculateDailyAdPoints$$anonfun$7.apply(CalculateDailyAdPoints.scala:32)
+	at adtargeting.CalculateDailyAdPoints$$anonfun$7.apply(CalculateDailyAdPoints.scala:29)
+	at com.twitter.scalding.RichPipe.groupBy(RichPipe.scala:161)
+	at adtargeting.CalculateDailyAdPoints.<init>(CalculateDailyAdPoints.scala:29)
+	... 18 more
+
